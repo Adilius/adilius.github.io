@@ -1,0 +1,14 @@
+body {
+    background-color: #191919
+}
+
+* {
+    font-family: 'ObjectSans', Object Sans, Helvetica, sans-serif;
+    font-weight: 300;
+    color: #F0F0F0
+}
+
+p.x-large {
+    font-size: 1.8rem;
+    line-height: 1.425;
+}
