@@ -25,65 +25,17 @@ body {
 }
 
 * {
-  font-family: Object Sans, Helvetica, sans-serif;
-  font-weight: 300;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
   color: #f0f0f0;
 }
 
-/* TYPOGRAPHY */
-
-h1 {
-  font-family: Helvetica, sans-serif;
-  font-size: 1.75rem;
-  font-weight: 800;
-  line-height: 1.4;
-  margin-top: 44px;
-}
-
-h2 {
-  font-family: Helvetica, sans-serif;
-  font-size: 1.25rem;
-  font-weight: 800;
-  line-height: 1.75;
-}
-
-p {
-  font-size: 1.75rem;
-  line-height: 1.6;
-}
-
-p.x-large {
-  font-size: 1.8rem;
-  line-height: 1.425;
-}
-
-p.med {
-  font-size: 1.25rem;
-  line-height: 1.75;
-}
-
-p.small {
-  font-size: 0.825rem;
-  line-height: 1.8;
-}
-
-p.label {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-li {
-  list-style: none;
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.navigation li {
+nav li {
   display: inline-block;
   margin-right: 16px;
 }
 
-.navigation li:last-of-type {
+nav li:last-of-type {
   margin-right: 0px;
 }
 
@@ -148,6 +100,57 @@ a:hover {
   order: 4;
 }
 
+
+@media only screen and (max-width: 720px){
+
+  /* TYPOGRAPHY */
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-top: 44px;
+}
+
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.75;
+}
+
+p {
+  font-size: 1.75rem;
+  line-height: 1.6;
+}
+
+p.x-large {
+  font-size: 1.8rem;
+  line-height: 1.425;
+}
+
+p.med {
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+p.small {
+  font-size: 0.825rem;
+  line-height: 1.8;
+}
+
+p.label {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+li {
+  list-style: none;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 /* CONTENT */
 
 section {
@@ -163,13 +166,76 @@ section {
 }
 
 .footer {
-    margin-top: 0px;
-    padding-bottom: 32px;
+  margin-top: 0px;
+  padding-bottom: 32px;
 }
 
 .footer p {
-    margin-top: 4px;
-    margin-bottom: 0;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+}
+
+@media only screen and (min-width: 721px){
+  /* TYPOGRAPHY */
+
+  h1 {
+    font-size: 2.3rem;
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    line-height: 1.75;
+  }
+
+  p {
+    font-size: 2.25rem;
+    line-height: 1.6;
+  }
+
+  p.x-large {
+    font-size: 4rem;
+    line-height: 1.4;
+  }
+
+  p.label {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  p.med {
+    font-size: 1.25rem;
+    line-height: 1.75;
+  }
+
+  p.small {
+    font-size: 0.875rem;
+    line-height: 1.8;
+  }
+
+  li {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+
+  li.large {
+    font-size: 2.125rem;
+    line-height: 2;
+  }
+
+  .navigation li {
+    margin-right: 40px;
+  }
+
+  /* CONTENT */
+
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+
 }
 
 @media only screen and (min-width: 1094px) {
@@ -198,7 +264,7 @@ section {
 
   p.label {
     font-size: 1, 5rem;
-    line-height: 1, 3;
+    line-height: 1.3;
   }
 
   p.med {
@@ -220,23 +286,25 @@ section {
     font-size: 2.5rem;
     line-height: 2;
   }
+
   /* CONTENT */
 
-  .section {
+  nav {
+    margin-top: -40px;
     padding-top: 120px;
   }
 
-  .navigation {
-    margin-top: -40px;
+  .container {
+    padding-top: 120px;
   }
 
-  .footer {
+  footer {
     margin-top: 20px;
     padding-top: 120px;
     padding-bottom: 80px;
   }
 
-  .footer p {
+  footer p {
     margin-top: 8px;
   }
 }
