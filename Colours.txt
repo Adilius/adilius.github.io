@@ -1,2 +1,0 @@
-Primary: #F0F0F0 (White)
-Secondary: #191919 (Black)
