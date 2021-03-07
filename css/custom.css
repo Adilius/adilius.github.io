@@ -1,5 +1,5 @@
 /* COLOURS */
-/* DARK 191919 */
+/* DARK 232741 */
 /* GREY  d9d9d9*/
 /* WHITE f0f0f0*/
 /* GREEN 00cc88*/
@@ -24,7 +24,7 @@ body {
   background-color: #232741;
 }
 
-* {
+p {
   font-family: Helvetica, sans-serif;
   font-weight: 400;
   color: #f0f0f0;
@@ -40,11 +40,15 @@ nav li:last-of-type {
 }
 
 a {
+  color: #00cc88;
   text-decoration: none;
 }
 
-a:hover {
-  color: #00cc88;
+a:hover,
+a:focus {
+  color: #1d9b6c;
+  transition: 0.3s;
+  text-decoration: none;
 }
 
 .heavy {
@@ -54,6 +58,10 @@ a:hover {
 
 .white-text {
   color: #f0f0f0;
+}
+
+footer {
+  text-align: center;
 }
 
 /* ACCESSORY */
@@ -81,22 +89,6 @@ a:hover {
 
 .flex-end {
   align-items: flex-end;
-}
-
-.item-1-sm {
-  order: 1;
-}
-
-.item-2-sm {
-  order: 2;
-}
-
-.item-3-sm {
-  order: 3;
-}
-
-.item-4-sm {
-  order: 4;
 }
 
 
@@ -155,6 +147,17 @@ li {
 }
 
 /* CONTENT */
+
+.hide-mobile {
+  display:none !important;
+  max-width: 0%;
+  width: 0px;
+}
+
+.show-mobile {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
 
 .align-r {
   text-align: center;
