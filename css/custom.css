@@ -173,7 +173,7 @@ nav {
 
 footer {
   margin-top: 0px;
-  padding-bottom: 32px;
+  padding-bottom: 5px;
 }
 
 footer p {
@@ -245,7 +245,7 @@ footer p {
   footer {
     margin-top: 10px;
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
 
   footer p {
@@ -312,7 +312,7 @@ footer p {
   footer {
     margin-top: 20px;
     padding-top: 120px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
   }
 
   footer p {
