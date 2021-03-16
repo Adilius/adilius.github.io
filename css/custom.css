@@ -89,17 +89,18 @@ a:focus {
   align-items: flex-end;
 }
 
-.svg {
+.social-icons img {
   width:50px;
   height:50px;
   filter: invert(50%) sepia(87%) saturate(1194%) hue-rotate(121deg) brightness(98%) contrast(102%);
 }
 
-.svg:hover {
+.social-icons img:hover {
   filter: invert(76%) sepia(43%) saturate(1423%) hue-rotate(101deg) brightness(94%) contrast(117%);
 }
 
 .mailto-link {
+  cursor: pointer;
   position: relative;
 }
 
