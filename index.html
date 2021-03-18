@@ -11,51 +11,52 @@
     <!-- Social share meta tags start -->
     <!-- Open graph protocol -->
     <meta property="og:title" content="Adil Aboulkacim">
-    <meta property="og:description"
-        content="Adil Aboulkacim is an computer science student.">
+    <meta property="og:description" content="Adil Aboulkacim is an computer science student.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="img/social-share.png">
     <meta property="og:site_name" content="Adil Aboulkacim">
     <!-- Twitter protocol -->
     <meta name="twitter:title" content="Adil Aboulkacim">
-    <meta name="twitter:description"
-        content="Adil Aboulkacim is an computer science student.">
+    <meta name="twitter:description" content="Adil Aboulkacim is an computer science student.">
     <meta name="twitter:image:src" content="img/social-share.png">
     <meta name="twitter:card" content="summary_large_image">
     <!-- Social share meta tags end -->
 
     <!-- Imported CSS -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS-->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-5 col-4-sm left-nav">
-                    <ul>
-                        <li><a href="index.html" title="Home" class="white-text">Adil Aboulkacim</a></li>
-                    </ul>
-                </div>
-                <div class="col-7 col-8-sm align-r">
-                    <ul class="right-nav">
-                        <li><a href="#" title="Projects" class="white-text">Projects</a></li>
-                        <li><a href="#" title="About" class="white-text">About</a></li>
-                        <li><a href="#footer" title="Contact" class="white-text">Contact</a></li>
-                    </ul>
-                </div>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #232741;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">Adil Aboulkacim</a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    <section id="intro" class="dark">
+
+    <section id="intro">
         <div class="container">
             <div class="row">
                 <div class="col-8 show-mobile">
-                    <p class="large white-text">Hi!👋</p>
+                    <p class="large white-text">Hello there!👋</p>
                     <p class="large white-text">My name is Adil Aboulkacim.
                         A student currently studying 4th year of computer engineering in <a
                             href="https://www.miun.se/en/" target="_blank">Mid Sweden University</a>.</p>
@@ -79,19 +80,26 @@
         </div>
     </section>
 
-    <section id="contact" class="dark">
+    <section id="contact">
         <div class="container">
             <div class="align-middle">
                 <ul class="social-icons">
-                    <a href="https://github.com/Adilius" target="_blank"><img src="img/icons/github.svg"/></a>
-                    <a href="https://www.linkedin.com/in/adil-aboulkacim/" target="_blank"><img src="img/icons/linkedin.svg"/></a>
-                    <a href="https://stackoverflow.com/users/7916220/adilius" target="_blank"><img src="img/icons/stack-overflow.svg"/></a>
-                    <div class="mailto-link" style="display:inline;">
-                        <img src="img/icons/envelope.svg" class="svg" id="email"><span class="mailto-message"></span></img>
-                    </div>
+                    <a href="https://github.com/Adilius" target="_blank">
+                        <img src="img/icons/github.svg" /></a>
 
+                    <a href="https://www.linkedin.com/in/adil-aboulkacim/" target="_blank">
+                        <img src="img/icons/linkedin.svg" /></a>
+
+                    <a href="https://stackoverflow.com/users/7916220/adilius" target="_blank">
+                        <img src="img/icons/stack-overflow.svg" /></a>
+
+                    <div class="mailto-link" style="display:inline;">
+                        <img src="img/icons/envelope.svg" class="svg" id="email"><span
+                            class="mailto-message"></span></img>
+                    </div>
                 </ul>
             </div>
+
             <div class="align-middle">
                 <div>
                     <p class="small white-text">Designed & Built by Adil Aboulkacim</p>
@@ -106,6 +114,9 @@
             </div>
         </div>
     </section>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 
     <!--Custom JS-->
     <script src="js/custom.js"></script>

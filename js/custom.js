@@ -23,14 +23,6 @@ window.onload = function(){
     
     }
 
-
-
-
-    console.log("hello")
-	// Add class to mailto link
-	// Needed to separate the disabling of the default action AND copy email to clipboard
-	var email = document.getElementById('mailto-message')
-
 	var messageCopy = "\"Click to copy email address\"";
 	var messageSuccess = "\"Email address copied to clipboard\"";
 
@@ -42,7 +34,6 @@ window.onload = function(){
 	// Store email address in a variable.
     var mailto = document.getElementById("email")
     mailto.addEventListener("click", () => {
-        console.log("hejhej")
         copyToClipboard();
         var message = ".mailto-message:after {content: " + messageSuccess + ";}"
         styleElem.innerHTML = message;
