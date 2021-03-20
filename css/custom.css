@@ -51,6 +51,11 @@ a:focus {
   filter: invert(76%) sepia(43%) saturate(1423%) hue-rotate(101deg) brightness(94%) contrast(117%);
 }
 
+.icon-small {
+  width:30px;
+  height:30px;
+}
+
 .mailto-link {
   cursor: pointer;
   position: relative;

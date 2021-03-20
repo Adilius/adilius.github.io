@@ -46,8 +46,12 @@ window.onload = function(){
 
 
 
+    //Get repo update date
+	asyncFetch();
 
-	asyncFetch()
+    //Run gifffer script
+    Gifffer();
+
 };
 
 // Grabbed this from Stack Overflow.
