@@ -23,11 +23,11 @@
   <!-- Social share meta tags end -->
 
   <!-- Imported CSS -->
-  <link rel="stylesheet" href="css/reset.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <!-- Custom CSS-->
-  <link rel="stylesheet" href="css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
@@ -57,7 +57,7 @@
   <section id="intro" class="py-3">
     <div class="container">
       <div class="row">
-        <div class="col-8 show-mobile">
+        <div class="col-lg-8 col-md-12">
           <p class="display-1 white-text">Hello there 👋</p>
           <p class="white-text">I'm <strong>Adil Aboulkacim</strong>,
             a student currently studying 4th year of computer science in <a href="https://www.miun.se/en/"
@@ -76,13 +76,13 @@
             and a Raspberry Pi 3 running <a href="https://pi-hole.net/" target="_blank">Pi-hole</a> and <a
               href="https://www.pivpn.io/" target="_blank">PiVPN</a>.</p>
         </div>
-        <div class="col-4 hide-mobile">
+        <div class="d-none d-lg-block col-lg-4">
           <img class="rounded-circle hide-mobile" src="img/headshot.jpg" alt="headshot"
             style="max-width:100%; max-height:100%">
         </div>
       </div>
     </div>
-  </section id="intro">
+  </section>
 
   <section id="projects" class="py-3">
     <div class="container">
@@ -92,17 +92,16 @@
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="/img/projects/regex_parser.png" alt="Card image cap">
+                <img class="card-img-top" src="/img/projects/regex_parser.png" alt="Regex parser">
                 <div class="card-body">
                   <p class="card-text">Regular expression parser and runtime written in C++ for school assignment. Works
                     on limited grammar.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group btn-group-lg">
-                      <img src="img/icons/cpp.svg" class="icon-small" />
+                      <img src="img/icons/cpp.svg" class="icon-small" alt="cpp icon"/>
                     </div>
                     <div class="btn-group">
-                      <a href="https://github.com/Adilius/regex-parser" target="_blank"> <button type="button"
-                          class="btn btn-sm btn-outline-secondary">Code</button></a>
+                      <a href="https://github.com/Adilius/regex-parser" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
                     </div>
                   </div>
                 </div>
@@ -110,14 +109,14 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" data-gifffer="img/projects/GTH2020.gif" alt="Card image cap">
+                <img class="card-img-top" data-gifffer="img/projects/GTH2020.gif" src="#" alt="Good Tech Hack 2020">
                 <div class="card-body">
                   <p class="card-text">Mockup web application for the idea of online mental health help. Done during a
                     24 hour hackathon.</p>
                   <div class="d-flex justify-content-between align-items-center">
 
                     <div class="btn-group btn-group-lg">
-                      <img src="img/icons/vue.svg" class="icon-small" />
+                      <img src="img/icons/vue.svg" class="icon-small" alt="vue icon"/>
                     </div>
                   </div>
                 </div>
@@ -125,7 +124,7 @@
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="img/projects/big_tree.png" alt="Card image cap">
+                <img class="card-img-top" src="img/projects/big_tree.png" alt="Decision Tree Classifier">
                 <div class="card-body">
                   <p class="card-text">An example of the <a
                       href="https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html"
@@ -136,11 +135,10 @@
                       target="_blank">UC Irvine Machine Learning Repository</a>.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group btn-group-lg">
-                      <img src="img/icons/python.svg" class="icon-small" />
+                      <img src="img/icons/python.svg" class="icon-small" alt="python icon"/>
                     </div>
                     <div class="btn-group">
-                      <a href="https://github.com/Adilius/CART-Decision-Tree-And-Naive-Bayes-Example" target="_blank"> <button type="button"
-                          class="btn btn-sm btn-outline-secondary">Code</button></a>
+                      <a href="https://github.com/Adilius/CART-Decision-Tree-And-Naive-Bayes-Example" target="_blank" class="btn btn-sm btn-outline-secondary">Code</a>
                     </div>
                   </div>
                 </div>
@@ -205,31 +203,30 @@
   </section>
 
   <section id="contact" class="py-3">
-    <div class="container ">
-      <div class="align-middle">
+    <div class="container">
         <div class="social-icons container">
           <ul class="list-inline d-flex justify-content-center">
             <li>
               <a href="https://github.com/Adilius" target="_blank" class="list-inline-item mx-2 px-2">
-                <img src="img/icons/github.svg" /></a>
+                <img src="img/icons/github.svg" alt="Github icon"/></a>
             </li>
 
             <li>
               <a href="https://www.linkedin.com/in/adil-aboulkacim/" target="_blank" class="list-inline-item mx-2 px-2">
-                <img src="img/icons/linkedin.svg" /></a>
+                <img src="img/icons/linkedin.svg" alt="LinkedIn icon"/></a>
             </li>
 
             <li>
               <a href="https://stackoverflow.com/users/7916220/adilius" target="_blank"
                 class="list-inline-item mx-2 px-2">
-                <img src="img/icons/stack-overflow.svg" /></a>
+                <img src="img/icons/stack-overflow.svg" alt="Stackoverflow icon"/></a>
             </li>
 
             <li class="mailto-link list-inline-item mx-2 px-2">
-              <img src="img/icons/envelope.svg" class="svg" id="email"><span class="mailto-message"></span></img>
+              <img src="img/icons/envelope.svg" class="svg" id="email" alt="Email address icon"><span class="mailto-message"></span>
             </li>
+          </ul>
         </div>
-      </div>
     </div>
 
     <div class="align-middle">
@@ -246,17 +243,16 @@
 
 
     </div>
-    </div>
   </section>
 
   <!-- Bootstrap JS -->
-  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
   <!-- Gifffer JS -->
-  <script type="text/javascript" src="js/gifffer.js"></script>
+  <script src="js/gifffer.js"></script>
 
   <!-- Custom JS-->
-  <script type="text/javascript" src="js/custom.js"></script>
+  <script src="js/custom.js"></script>
 
 </body>
 
