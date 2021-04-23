@@ -11,6 +11,5 @@ Other than code I have done:
 <br />
 
 And for your own learning:
-* Books to read 📚
 * Youtubers for inspo 🎬
 * Favorite technical podcasts 🎙️
