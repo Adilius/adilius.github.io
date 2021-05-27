@@ -47,7 +47,13 @@ a:focus {
   text-decoration: none;
 }
 
-
+.divider {
+  display: block;
+  margin: 50px 0;
+  width: 200px;
+  height: 2px;
+  background-color: #00cc88;
+}
 
 #contact {
   text-align: center;
