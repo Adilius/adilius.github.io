@@ -30,9 +30,27 @@ body {
   color: #f0f0f0;
 }
 
+.icon-padding {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.fancy-font {
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  font-family: "Chronicle Display Bold",Georgia,serif;
+}
+
+.h4 {
+  font-family: Gotham,Helvetica,Arial,sans-serif;
+}
+
 p {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.15rem;
+  font-weight: 400;
+  font-family: Whitney,Helvetica,Arial,sans-serif;
   line-height: 1.5;
 }
 
