@@ -30,7 +30,7 @@ window.onload = function(){
     }
 
 	var messageCopy = "\"Click to copy email address\"";
-	var messageSuccess = "\"Email address copied to clipboard\"";
+	var messageSuccess = "\"Email address copied to clipboard!\"";
 
     var styleElem = document.head.appendChild(document.createElement("style"));
     var message = ".mailto-message:after {content: " + messageCopy + ";}"
