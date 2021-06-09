@@ -7,18 +7,19 @@
 
 /* UNIVERSAL */
 
-body {
+html, body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   left: 0;
   top: 0;
-
+  background-color: #232741;
+  overflow: auto;
 }
 
-.light-bg {
-  background-color: #F0F0F0;
+.border-green{
+  border-color: #00cc88 !important;
 }
 
 .dark-bg {
