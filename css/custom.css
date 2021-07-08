@@ -1,11 +1,9 @@
-/* COLOURS */
-/* DARK 232741 */
-/* GREY  d9d9d9*/
-/* WHITE f0f0f0*/
-/* GREEN 00cc88*/
-/* GREEN FOCUS #00ffaa */
-
-/* UNIVERSAL */
+:root {
+  --green--color: #00cc88;
+  --green--focus--color: #00ffaa;
+  --dark--color: #232741;
+  --white--color: #f0f0f0;
+}
 
 html, body {
   height: 100%;
@@ -18,15 +16,15 @@ html, body {
 }
 
 .border-green{
-  border-color: #00cc88 !important;
+  border-color: var(--green--color) !important;
 }
 
 .dark-bg {
-  background-color: #232741;
+  background-color: var(--dark--color);
 }
 
 .white-text {
-  color: #f0f0f0;
+  color: var(--white--color);
 }
 
 .icon-padding {
@@ -54,13 +52,13 @@ p {
 }
 
 a {
-  color: #00cc88;
+  color: var(--green--color);
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #00ffaa;
+  color: var(--green--focus--color);
   transition: 0.3s;
   text-decoration: none;
 }
@@ -70,7 +68,7 @@ a:focus {
   margin: 50px 0;
   width: auto;
   height: 2px;
-  background-color: #00cc88;
+  background-color: var(--green--color);
 }
 
 #contact {
