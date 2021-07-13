@@ -80,6 +80,10 @@ a:focus {
   background-color: var(--green--color);
 }
 
+.pt-6 {
+  padding-top:4rem!important
+}
+
 #contact {
   text-align: center;
 }

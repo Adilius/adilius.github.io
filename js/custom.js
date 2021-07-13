@@ -1,27 +1,24 @@
 "use strict";
 
 //When windows has finished loading
-window.onload = function () {
+window.onload = async function () {
 
     //Loads nav and footer from files
-    loadHtml("nav", "html/nav.html")
-    loadHtml("footer", "html/footer.html")
+    await loadHtml("nav", "html/nav.html")
+    await loadHtml("footer", "html/footer.html")
+
+    //Enables email copy
+    emailCopy();
 
     //Enables Bootstrap Tooltips
     enableBootstrapTooltips();
-
-    //Setup email copy function
-    emailCopy();
 
     //Get repository update date
     asyncFetch();
 
     //Run gifffer script
     Gifffer();
-
 };
-
-
 
 //API call to display page last updated
 async function asyncFetch() {
@@ -54,7 +51,7 @@ function emailCopy() {
 
     // On click, get href and remove 'mailto:' from value
     // Store email address in a variable.
-    var mailto = document.getElementById("email")
+    var mailto = document.getElementById("email");
     mailto.addEventListener("click", () => {
         copyToClipboard();
         var message = ".mailto-message:after {content: " + messageSuccess + ";}"
@@ -86,10 +83,10 @@ function enableBootstrapTooltips() {
 }
 
 /* 
- * @param {string} parentElementId - The ID of the DOM element to load into
- * @param {string} htmlFilePath - The path of the HTML file to load
+ * @param {string} ElementId - The ID of the DOM element to load into
+ * @param {string} FilePath - The path of the HTML file to load
  */
-const loadHtml = function (parentElementId, filePath) {
+async function loadHtml(ElementId, filePath) {
     const init = {
         method: "GET",
         headers: { "Content-Type": "text/html" },
@@ -98,23 +95,15 @@ const loadHtml = function (parentElementId, filePath) {
     };
 
     const req = new Request(filePath, init);
-    fetch(req)
+    await fetch(req)
         .then(function (response) {
             return response.text();
         })
         .then(function (body) {
-            var oldChild = document.getElementById(parentElementId);
-            console.log('Old Child');
-            console.log(oldChild);
+            var oldChild = document.getElementById(ElementId);
 
             let doc = new DOMParser().parseFromString(body, 'text/html')
             let newChild = doc.body.firstChild;
-            console.log('New Child');
-            console.log(newChild);
-
-            var parent = document.getElementById(parentElementId).parentNode;
-            console.log('Parent');
-            console.log(parent);
 
             oldChild.replaceWith(newChild)
         });
