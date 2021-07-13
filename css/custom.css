@@ -80,8 +80,12 @@ a:focus {
   background-color: var(--green--color);
 }
 
+.border-bottom-2 {
+  border-bottom:2px solid var(--green--color) !important;
+}
+
 .pt-6 {
-  padding-top:4rem!important
+  padding-top:4rem !important;
 }
 
 #contact {

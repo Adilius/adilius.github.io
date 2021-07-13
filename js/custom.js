@@ -4,7 +4,7 @@
 window.onload = async function () {
 
     //Loads nav and footer from files
-    await loadHtml("nav", "html/nav.html")
+    loadHtml("nav", "html/nav.html")
     await loadHtml("footer", "html/footer.html")
 
     //Enables email copy
