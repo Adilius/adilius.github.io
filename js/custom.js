@@ -3,12 +3,8 @@
 //When windows has finished loading
 window.onload = async function () {
 
-    //Loads nav and footer from files
+    //Loads nav from files
     loadHtml("nav", "html/nav.html")
-    await loadHtml("footer", "html/footer.html")
-
-    //Enables email copy
-    emailCopy();
 
     //Enables Bootstrap Tooltips
     enableBootstrapTooltips();
@@ -18,6 +14,15 @@ window.onload = async function () {
 
     //Run gifffer script
     Gifffer();
+
+    //Add signature
+    addSignature("html/signature.html")
+
+    //Loads footer from files
+    await loadHtml("footer", "html/footer.html")
+
+    //Enables email copy - relies on footer
+    emailCopy();
 };
 
 //API call to display page last updated
@@ -82,10 +87,6 @@ function enableBootstrapTooltips() {
     })
 }
 
-/* 
- * @param {string} ElementId - The ID of the DOM element to load into
- * @param {string} FilePath - The path of the HTML file to load
- */
 async function loadHtml(ElementId, filePath) {
     const init = {
         method: "GET",
@@ -106,5 +107,24 @@ async function loadHtml(ElementId, filePath) {
             let newChild = doc.body.firstChild;
 
             oldChild.replaceWith(newChild)
+        });
+};
+
+async function addSignature(filePath) {
+    const init = {
+        method: "GET",
+        headers: { "Content-Type": "text/html" },
+        mode: "cors",
+        cache: "default"
+    };
+
+    const req = new Request(filePath, init);
+    await fetch(req)
+        .then(function (response) {
+            return response.text();
+        })
+        .then(function (body) {
+            var bodyelement = document.body
+            bodyelement.innerHTML += body
         });
 };
