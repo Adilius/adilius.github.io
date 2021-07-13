@@ -1,28 +1,16 @@
 "use strict";
 
 //When windows has finished loading
-window.onload = async function () {
-
-    //Loads nav from files
-    loadHtml("nav", "html/nav.html")
-
-    //Enables Bootstrap Tooltips
-    enableBootstrapTooltips();
+window.onload = function () {
 
     //Get repository update date
     asyncFetch();
 
-    //Run gifffer script
-    Gifffer();
-
-    //Add signature
-    addSignature("html/signature.html")
-
-    //Loads footer from files
-    await loadHtml("footer", "html/footer.html")
-
     //Enables email copy - relies on footer
     emailCopy();
+
+    //Enables Bootstrap Tooltips
+    enableBootstrapTooltips();
 };
 
 //API call to display page last updated
@@ -83,48 +71,8 @@ function copyToClipboard() {
 function enableBootstrapTooltips() {
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        console.log("hello")
         return new bootstrap.Tooltip(tooltipTriggerEl)
     })
+   
 }
-
-async function loadHtml(ElementId, filePath) {
-    const init = {
-        method: "GET",
-        headers: { "Content-Type": "text/html" },
-        mode: "cors",
-        cache: "default"
-    };
-
-    const req = new Request(filePath, init);
-    await fetch(req)
-        .then(function (response) {
-            return response.text();
-        })
-        .then(function (body) {
-            var oldChild = document.getElementById(ElementId);
-
-            let doc = new DOMParser().parseFromString(body, 'text/html')
-            let newChild = doc.body.firstChild;
-
-            oldChild.replaceWith(newChild)
-        });
-};
-
-async function addSignature(filePath) {
-    const init = {
-        method: "GET",
-        headers: { "Content-Type": "text/html" },
-        mode: "cors",
-        cache: "default"
-    };
-
-    const req = new Request(filePath, init);
-    await fetch(req)
-        .then(function (response) {
-            return response.text();
-        })
-        .then(function (body) {
-            var bodyelement = document.body
-            bodyelement.innerHTML += body
-        });
-};
