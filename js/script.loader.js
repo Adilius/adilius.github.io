@@ -1,7 +1,6 @@
 
 filenames = [
     'bootstrap.bundle.min',
-    'gifffer',
     'custom'
 ]
 
