@@ -33,5 +33,3 @@ jobs:
       - name: Perform HTML validation
         run: |
           python ../../tests/html_validator.py
-        run: echo "W3C Validation job successfully ran! 🎉"
-    
