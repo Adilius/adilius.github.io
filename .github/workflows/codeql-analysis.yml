@@ -1,4 +1,4 @@
-name: "CodeQL"
+name: "JavaScript Validation - CodeQL"
 
 on:
   push:
