@@ -8,6 +8,7 @@ on:
     
 jobs: 
   analyze:
+
     name: HTML Validation
     runs-on: ubuntu-latest
     strategy:
@@ -17,7 +18,7 @@ jobs:
     
     steps:
       - name: Checkout repository
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
