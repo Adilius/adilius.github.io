@@ -1,0 +1,16 @@
+name: "W3C Validation"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
+jobs: 
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    
+    steps:
+      - run: echo "W3C Validation job successfully ran! 🎉"
+    
