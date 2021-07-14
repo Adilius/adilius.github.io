@@ -19,4 +19,8 @@ for message in data['messages']:
             error_count += 1
             print(error_count,message.get('type'))
 
-print('Error count:', error_count)
+if error_count > 0:
+    raise Exception('Errors found! \n',
+                    'Error count:', error_count)
+else:
+    print("No errors found!")
