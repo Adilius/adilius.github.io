@@ -71,7 +71,6 @@ function copyToClipboard() {
 function enableBootstrapTooltips() {
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        console.log("hello")
         return new bootstrap.Tooltip(tooltipTriggerEl)
     })
    
