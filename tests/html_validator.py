@@ -13,7 +13,7 @@ for root, dir, files in os.walk('.'):
 
 # Run through all files through validator and raise exception if any errors is found
 for html_file in html_files_list:
-    print("Analyzing file: {}".format(html_file))
+    print(f'Analyzing file: {html_file}')
     html_file_object = open(html_file, 'r', encoding="utf-8")
     payload = html_file_object.read()
 
@@ -31,6 +31,6 @@ for html_file in html_files_list:
     error_count = len(data['messages'])
 
     if error_count > 0:
-        raise Exception('HTML validation failed! {} errors found.'.format(error_count))
+        raise Exception(f'HTML validation failed! {error_count} errors found in {html_file}.')
     else:
-        print("HTML validation passed: {}".format(html_file))
+        print(f'HTML validation passed: {html_file}')
