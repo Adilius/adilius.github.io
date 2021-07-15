@@ -1,7 +1,7 @@
 import requests
 import json
 
-html_file = open('../index.html', 'r', encoding="utf-8")
+html_file = open('index.html', 'r', encoding="utf-8")
 payload = html_file.read()
 
 URL = "http://validator.w3.org/nu/?out=json&level=error"
