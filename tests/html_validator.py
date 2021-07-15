@@ -1,8 +1,7 @@
 import requests
 import json
-from pprint import pprint
 
-html_file = open('../index.html', 'r', encoding="utf8")
+html_file = open('../index.html', 'r', encoding="utf-8")
 payload = html_file.read()
 
 URL = "http://validator.w3.org/nu/?out=json&level=error"
@@ -13,15 +12,13 @@ HEADERS = { 'Content-Type': 'text/html; charset=utf-8',
 response = requests.post(
                         url = URL,
                         headers = HEADERS,
-                        files=payload)
+                        data=payload.encode('utf-8'))
 
 data = json.loads(response.text)
-pprint(data)
 
 error_count = len(data['messages'])
-print('Error count:', error_count)
 
 if error_count > 0:
-    raise Exception('Errors found! {} errors found.'.format(error_count))
+    raise Exception('HTML syntax errors found! {} errors found.'.format(error_count))
 else:
-    print("No errors found!")
+    print("No HTML syntax errors found!")
