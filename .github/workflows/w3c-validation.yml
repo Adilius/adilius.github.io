@@ -32,4 +32,4 @@ jobs:
 
       - name: Perform HTML validation
         run: |
-          python ./tests/html_validator.py
+          python tests/html_validator.py

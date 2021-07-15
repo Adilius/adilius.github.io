@@ -1,26 +1,27 @@
 import requests
+import json
+from pprint import pprint
 
-URL = "http://validator.w3.org/nu/"
+html_file = open('../index.html', 'r', encoding="utf8")
+payload = html_file.read()
 
-PARAMS = {  'doc': 'https://bradgarropy.com/',
-            'out': 'json'}
+URL = "http://validator.w3.org/nu/?out=json&level=error"
 
-r = requests.get(url = URL, params = PARAMS)
+HEADERS = { 'Content-Type': 'text/html; charset=utf-8',
+            'parser': 'html5'}
 
-data = r.json()
+response = requests.post(
+                        url = URL,
+                        headers = HEADERS,
+                        files=payload)
 
-data.pop('url', None)
+data = json.loads(response.text)
+pprint(data)
 
-error_count = 0
-
-for message in data['messages']:
-    if 'type' in message:
-        if message.get('type') == 'error':
-            error_count += 1
-            print(error_count,message.get('type'))
+error_count = len(data['messages'])
+print('Error count:', error_count)
 
 if error_count > 0:
-    raise Exception('Errors found! \n',
-                    'Error count:', error_count)
+    raise Exception('Errors found! {} errors found.'.format(error_count))
 else:
     print("No errors found!")
