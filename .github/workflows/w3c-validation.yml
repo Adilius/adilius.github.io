@@ -1,4 +1,4 @@
-name: "HTML Validation"
+name: "HTML Validation - W3C Validator"
 
 on:
   push:
