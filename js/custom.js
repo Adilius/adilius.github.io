@@ -6,7 +6,7 @@ window.onload = function () {
     //Get repository update date
     asyncFetch();
 
-    //Enables email copy - relies on footer
+    //Enables email copy
     emailCopy();
 
     //Enables Bootstrap Tooltips
