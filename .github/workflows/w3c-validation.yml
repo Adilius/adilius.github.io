@@ -3,11 +3,11 @@ name: "HTML Validation - W3C Validator"
 on:
   push:
     paths:
-      - 'index.html'
+      - '**.html'
     branches: [ master ]
   pull_request:
     paths:
-      - 'index.html'
+      - '**.html'
     branches: [ master ]
     
 jobs: 
