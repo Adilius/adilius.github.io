@@ -141,9 +141,7 @@ a:focus {
   height: 0;
   width: 0;
   position: absolute;
-  pointer-events: none;
   border-color: rgba(0, 0, 0, 0);
-  border-top-color: #000000;
   border-width: 4px;
   margin-left: -4px;
   content:"";
