@@ -13,7 +13,7 @@ window.onload = function () {
     enableBootstrapTooltips();
 };
 
-//API call to display page last updated
+//Get date for when website was last updated
 async function asyncFetch() {
     fetch('https://api.github.com/repos/adilius/adilius.github.io')
         .then(response => response.json())
