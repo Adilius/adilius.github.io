@@ -1,8 +1,9 @@
 name : "Staging Action"
 
-on: check_run
-  type:
-    - 'completed'
+on:
+  check-run:
+    types:
+      - 'completed'
 
 jobs:
   checkForSuccess:
