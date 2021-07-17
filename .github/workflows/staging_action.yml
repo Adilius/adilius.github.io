@@ -1,7 +1,7 @@
 name : "Staging Action"
 
 on:
-  check-run:
+  check_run:
     types:
       - 'completed'
 
