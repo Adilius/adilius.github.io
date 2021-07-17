@@ -4,11 +4,14 @@ on:
   push:
     paths:
       - '**.js'
-    branches: [ master ]
+    branches: [ staging ]
   pull_request:
     paths:
       - '**.js'
-    branches: [ master ]
+    branches: [ staging ]
+  schedule:
+  # Run cron job first day of each month
+    - cron: '0 0 1 * *' 
 
 jobs:
   analyze:
