@@ -4,11 +4,16 @@ on:
   push:
     paths:
       - '**.html'
-    branches: [ staging ]
+    branches:
+      - 'staging'
+
   pull_request:
     paths:
       - '**.html'
-    branches: [ staging ]
+    branches: 
+      - 'staging'
+
+  schedule:
   # Run cron job first day of each month
     - cron: '0 0 1 * *' 
     
