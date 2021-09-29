@@ -3,6 +3,7 @@
   --green--focus--color: #00ffaa;
   --dark--color: #232741;
   --white--color: #f0f0f0;
+  --button-font-size: 1.4rem:
 }
 
 html, body {
@@ -62,6 +63,35 @@ a:focus {
   color: var(--green--focus--color);
   transition: 0.3s;
   text-decoration: none;
+}
+
+.btn {
+  color: #000000;
+  font-size: var(--button-font-size);
+  background-color: var(--green--color);
+  border-color: var(--green--color);
+}
+
+.btn:hover,
+.btn:focus {
+  color: #000000;
+  font-size:var(--button-font-size);
+  background-color: var(--green--focus--color);
+  border-color: var(--green--focus--color);
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.blue-math {
+  background-color: #cfe2ff;
+}
+
+.yellow-misc {
+  background-color: #fff3cd;
+}
+
+.green-comp {
+  background-color: #d1e7dd;
 }
 
 .divider-25 {
