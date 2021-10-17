@@ -185,8 +185,12 @@ a:focus {
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1700px) {
   .container{
       max-width: 1600px;
   }
+}
+
+.black-text {
+  color: #000000;
 }
