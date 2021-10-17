@@ -83,15 +83,15 @@ a:focus {
 }
 
 .blue-math {
-  background-color: #cfe2ff;
+  background-color: #c0d9ff;
 }
 
 .yellow-misc {
-  background-color: #fff3cd;
+  background-color: #fff1c5;
 }
 
 .green-comp {
-  background-color: #d1e7dd;
+  background-color: #c4e9d8;
 }
 
 .divider-25 {
@@ -182,4 +182,11 @@ a:focus {
 .mailto-link:focus-within .mailto-message {
   content: "Test";
   display: block;
+}
+
+
+@media (min-width: 1200px) {
+  .container{
+      max-width: 1600px;
+  }
 }
