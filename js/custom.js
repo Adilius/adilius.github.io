@@ -18,7 +18,7 @@ async function asyncFetch() {
     fetch('https://api.github.com/repos/adilius/adilius.github.io')
         .then(response => response.json())
         .then(data => {
-            var updateDate = new Date(data.updated_at)
+            var updateDate = new Date(data.pushed_at)
             var currentDate = new Date();
             var dayDifference = Math.floor(Math.abs(currentDate - updateDate) / (1000 * 60 * 60 * 24))
 
