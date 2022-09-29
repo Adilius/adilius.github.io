@@ -3,7 +3,8 @@ name: "Grab PDF from Master's thesis"
 on:
   schedule:
   # At 12:30 on Friday.
-    - cron: '30 10 * * 5' 
+    - cron: '30 10 * * 5'
+  workflow_dispatch:
 
 jobs: 
   analyze:
