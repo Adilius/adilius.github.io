@@ -1,0 +1,15 @@
+name: "Grab PDF from Master's thesis"
+
+on:
+  schedule:
+  # At 12:30 on Friday.
+    - cron: '30 10 * * FRI' 
+
+jobs:
+  uses: dsaltares/fetch-gh-release-asset@master
+  with:
+    repo: "Adilius/masters-thesis-report"
+    version: "tags/v1"
+    file: "thesis.pdf"
+    target: "img/thesis.pdf"
+    token: ${{ secrets.PDF_GRABBER }}
