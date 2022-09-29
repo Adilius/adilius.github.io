@@ -8,11 +8,11 @@ on:
 jobs: 
   analyze:
 
-    name: HTML Validation
+    name: PDF Grab
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout repository
+      - name: fetch-gh-release-asset
         uses: dsaltares/fetch-gh-release-asset@1.0.0
         with:
           repo: "Adilius/masters-thesis-report"
