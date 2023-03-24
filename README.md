@@ -8,8 +8,8 @@ Personal portfolio where you will find out:
 * What I've done 📜
 <br />
 
-Other than code I have done:
-* Academics 🎓 (TODO)
+I also show my experience in:
+* Academics 🎓
 * Homelab setup 🏠 
 <br />
 
