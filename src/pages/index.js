@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 
 export default function Blog({ posts }) {
   return (
-    <>
+    <Layout>
       <h1>Welcome to My Blog</h1>
       <p>Here are my latest posts:</p>
       {posts.map(({ slug, frontmatter }) => (
@@ -17,7 +17,7 @@ export default function Blog({ posts }) {
           <p>{frontmatter.date}</p>
         </div>
       ))}
-    </>
+    </Layout>
   )
 }
 

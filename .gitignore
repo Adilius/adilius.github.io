@@ -75,3 +75,4 @@ coverage/
 
 # Optional: local GitHub Pages deploy state
 .gh-pages/
+node_modules
